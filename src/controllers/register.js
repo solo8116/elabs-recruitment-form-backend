@@ -32,7 +32,7 @@ const register = async (req, res) => {
       whyElabs,
       anythingElse,
     });
-    res.status(201).json({ success: true, msg: "student registered" });
+    res.status(201).json({ success: true, msg: "student application registered" });
   } catch (error) {
     res.status(400).json({
       success: false,

@@ -13,7 +13,7 @@ const register = yup.object().shape({
     name: yup.string().required(),
     roll: yup.number().required(),
     gender: yup.string().oneOf(["Male", "Female"]).required(),
-    contactNumber: yup.number().min(1000000000).max(9999999999).required(),
+    contactNumber: yup.string().min(10).max(10).required(),
     yearOfStudy: yup.string().required(),
     branch: yup.string().required(),
     links: linkSchema,
